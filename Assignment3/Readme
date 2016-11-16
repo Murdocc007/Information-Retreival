@@ -1,0 +1,9 @@
+The answers to the questions asked are in the Solutions.txt file.
+
+To run the code, use the command:
+python Solution.py
+
+The document vectors will be in the DocVectors file and the query vectors will be in the queryVector file.
+Also in the terminal you will see the top 5 matching documents for each query with the cosine similarity(in sorted order)
+
+

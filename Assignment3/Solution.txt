@@ -1,0 +1,537 @@
+Ans 1: The document vectors are in the folder docVectors and query Vectors are in the folder queryVectors
+
+Ans 2:
+
+In sorted order are the ranks of the 20 queries(query index starts from 0).
+
+Weighting Scheme 1:
+		Top 5 ranked documents for query0:
+			1. Cranfield0471 -0.906225246803 ("")
+			2. Cranfield0995 -0.906225246803 ("")
+			3. Cranfield0533 -0.896449896739 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.478386053162 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.50958959201 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query1:
+			1. Cranfield0471 -0.918870383605 ("")
+			2. Cranfield0995 -0.918870383605 ("")
+			3. Cranfield0533 -0.909115791366 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.484853781714 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.516995153059 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query2:
+			1. Cranfield0471 -0.938858696037 ("")
+			2. Cranfield0995 -0.938858696037 ("")
+			3. Cranfield0533 -0.928507021878 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.495770289495 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.529311097324 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query3:
+			1. Cranfield0471 -0.841403241075 ("")
+			2. Cranfield0995 -0.841403241075 ("")
+			3. Cranfield0533 -0.83189455056 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.444899615968 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.470539150289 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query4:
+			1. Cranfield0471 -0.935326025484 ("")
+			2. Cranfield0995 -0.935326025484 ("")
+			3. Cranfield0533 -0.925166116392 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.49389227848 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.527309136017 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query5:
+			1. Cranfield0471 -0.934125992512 ("")
+			2. Cranfield0995 -0.934125992512 ("")
+			3. Cranfield0533 -0.923708659606 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.493334461512 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.524864294693 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query6:
+			1. Cranfield0437 -0.394948289446 ("hypervelocity stagnation point heat transfer .")
+			2. Cranfield0259 -0.382620539328 ("second order theory for unsteady supersonic flow past slender pointed bodies of revolution .")
+			3. Cranfield0105 -0.380311288575 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			4. Cranfield0148 -0.379731977138 ("on displacement thickness .")
+			5. Cranfield0492 -0.379082452152 ("prediction of ogive-forebody pressures at angles of attack .")
+		Top 5 ranked documents for query7:
+			1. Cranfield0259 -0.427044906026 ("second order theory for unsteady supersonic flow past slender pointed bodies of revolution .")
+			2. Cranfield0437 -0.426845981353 ("hypervelocity stagnation point heat transfer .")
+			3. Cranfield0105 -0.426257633064 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			4. Cranfield1061 -0.42479320276 ("turbulent mixing of a rocket exhaust jet with a supersonic stream including chemical reactions ")
+			5. Cranfield1133 -0.424678109991 ("a simple extension of southwell's method for determining the elastic general instability pressure of ring-stiffened cylinders subject to 								 external hydrostatic pressure .")
+		Top 5 ranked documents for query8:
+			1. Cranfield0471 -0.95925218092 ("")
+			2. Cranfield0995 -0.95925218092 ("")
+			3. Cranfield0533 -0.948596386002 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.50613755613 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.540921787962 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query9:
+			1. Cranfield0471 -0.933213222601 ("")
+			2. Cranfield0995 -0.933213222601 ("")
+			3. Cranfield0533 -0.923042377003 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.487996087038 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.522365886564 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query10:
+			1. Cranfield0471 -0.916372883261 ("")
+			2. Cranfield0995 -0.916372883261 ("")
+			3. Cranfield0533 -0.906241477783 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.484220395199 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.514532333453 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query11:
+			1. Cranfield0471 -0.926518688888 ("")
+			2. Cranfield0995 -0.926518688888 ("")
+			3. Cranfield0533 -0.916322804561 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.4894572293 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.521298780689 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query12:
+			1. Cranfield0471 -0.961282739495 ("")
+			2. Cranfield0995 -0.961282739495 ("")
+			3. Cranfield0533 -0.950578488558 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.507179688985 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.54204254381 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query13:
+			1. Cranfield0471 -0.958523880347 ("")
+			2. Cranfield0995 -0.958523880347 ("")
+			3. Cranfield0533 -0.948050181201 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.50583067199 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.540575294987 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query14:
+			1. Cranfield0259 -0.507540668789 ("second order theory for unsteady supersonic flow past slender pointed bodies of revolution .")
+			2. Cranfield0462 -0.503209173065 ("photo-thermoelasticity ")
+			3. Cranfield0931 -0.502761152104 ("stability equations for conical shells .")
+			4. Cranfield0105 -0.501779905415 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			5. Cranfield0611 -0.500697872167 ("an approximate solution of the compressible laminar boundary layer on a flat plate .")
+		Top 5 ranked documents for query15:
+			1. Cranfield0471 -0.908212469068 ("")
+			2. Cranfield0995 -0.908212469068 ("")
+			3. Cranfield0533 -0.898042639808 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.480095748388 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.512877629183 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query16:
+			1. Cranfield0259 -0.42429292942 ("second order theory for unsteady supersonic flow past slender pointed bodies of revolution .")
+			2. Cranfield0437 -0.421816265309 ("hypervelocity stagnation point heat transfer .")
+			3. Cranfield0105 -0.416195328308 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			4. Cranfield1088 -0.415059002345 ("iterative methods for solving partial difference equations of elliptic type ")
+			5. Cranfield1145 -0.414819195072 ("buckling of core-stabilized cylinders under axisymmetric external")
+		Top 5 ranked documents for query17:
+			1. Cranfield0471 -0.929484722578 ("")
+			2. Cranfield0995 -0.929484722578 ("")
+			3. Cranfield0533 -0.9190847801 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.490945445181 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.527071980275 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query18:
+			1. Cranfield0471 -0.907056625879 ("")
+			2. Cranfield0995 -0.907056625879 ("")
+			3. Cranfield0533 -0.896882361675 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.479374588463 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.507225686001 ("three-dimensional effect of flutter in a real fluid .")
+		Top 5 ranked documents for query19:
+			1. Cranfield0471 -0.871622659876 ("")
+			2. Cranfield0995 -0.871622659876 ("")
+			3. Cranfield0533 -0.861895012052 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			4. Cranfield0405 --0.461234174391 ("tables of thermal properties of gases .")
+			5. Cranfield0362 --0.492613419694 ("three-dimensional effect of flutter in a real fluid .")
+
+
+
+Weighting Scheme 2:
+	Top 5 ranked documents for query0:
+		1. Cranfield0995 -0.998643826666 ("")
+		2. Cranfield0471 -0.998642427001 ("")
+		3. Cranfield0271 -0.99863076058 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0492 -0.998621647641 ("prediction of ogive-forebody pressures at angles of attack .")
+		5. Cranfield0347 -0.998621609213 ("boundary layer measurements in hypersonic flow ")
+	Top 5 ranked documents for query1:
+		1. Cranfield0995 -0.998747063456 ("")
+		2. Cranfield0471 -0.998745664546 ("")
+		3. Cranfield0271 -0.998733621067 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0105 -0.998731861337 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		5. Cranfield0492 -0.998727273233 ("prediction of ogive-forebody pressures at angles of attack .")
+	Top 5 ranked documents for query2:
+		1. Cranfield0485 -0.998754279358 ("linear heat flow in a composite slab .")
+		2. Cranfield0995 -0.998749853272 ("")
+		3. Cranfield0471 -0.998748456051 ("")
+		4. Cranfield0271 -0.998742777326 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		5. Cranfield0105 -0.998736564733 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+	Top 5 ranked documents for query3:
+		1. Cranfield0995 -0.998698343515 ("")
+		2. Cranfield0471 -0.998696942979 ("")
+		3. Cranfield0271 -0.998679462573 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0105 -0.998677623122 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		5. Cranfield0492 -0.998675162338 ("prediction of ogive-forebody pressures at angles of attack .")
+	Top 5 ranked documents for query4:
+		1. Cranfield0995 -0.998642363676 ("")
+		2. Cranfield0471 -0.998640966228 ("")
+		3. Cranfield0271 -0.998624520621 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0347 -0.99862335101  ("boundary layer measurements in hypersonic flow ")
+		5. Cranfield0492 -0.998619810198 ("prediction of ogive-forebody pressures at angles of attack .")
+	Top 5 ranked documents for query5:
+		1. Cranfield0995 -0.998882495162 ("")
+		2. Cranfield0471 -0.998881098378 ("")
+		3. Cranfield0271 -0.998873839851 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0105 -0.998870342611 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		5. Cranfield0347 -0.998862720467 ("boundary layer measurements in hypersonic flow ")
+	Top 5 ranked documents for query6:
+		1. Cranfield0492 -0.998935702482 ("prediction of ogive-forebody pressures at angles of attack .")
+		2. Cranfield0995 -0.998922271514 ("")
+		3. Cranfield0471 -0.998920873898 ("")
+		4. Cranfield0105 -0.998911619594 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		5. Cranfield0271 -0.998903639147 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+	Top 5 ranked documents for query7:
+		1. Cranfield0995 -0.99883631567 ("")
+		2. Cranfield0471 -0.998834917638 ("")
+		3. Cranfield0492 -0.998824281447 ("prediction of ogive-forebody pressures at angles of attack .")
+		4. Cranfield0105 -0.998822526031 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		5. Cranfield0271 -0.99881764301 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+	Top 5 ranked documents for query8:
+		1. Cranfield0995 -0.998714165845 ("")
+		2. Cranfield0471 -0.998712770986 ("")
+		3. Cranfield0105 -0.998709100887 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		4. Cranfield0347 -0.998700076063 ("boundary layer measurements in hypersonic flow ")
+		5. Cranfield0271 -0.998695730035 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+	Top 5 ranked documents for query9:
+		1. Cranfield0995 -0.99894905875 ("")
+		2. Cranfield0471 -0.998947662485 ("")
+		3. Cranfield0271 -0.998930534377 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0492 -0.998929265922 ("prediction of ogive-forebody pressures at angles of attack .")
+		5. Cranfield0347 -0.99892705119 ("boundary layer measurements in hypersonic flow ")
+	Top 5 ranked documents for query10:
+		1. Cranfield0995 -0.998928171986 ("")
+		2. Cranfield0471 -0.998926774846 ("")
+		3. Cranfield0271 -0.998909577361 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0105 -0.998907299223 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		5. Cranfield0492 -0.998906469382 ("prediction of ogive-forebody pressures at angles of attack .")
+	Top 5 ranked documents for query11:
+		1. Cranfield0995 -0.99872319988 ("")
+		2. Cranfield0471 -0.998721801892 ("")
+		3. Cranfield0271 -0.998705241064 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0347 -0.998704143019 ("boundary layer measurements in hypersonic flow ")
+		5. Cranfield0492 -0.998702173052 ("prediction of ogive-forebody pressures at angles of attack .")
+	Top 5 ranked documents for query12:
+		1. Cranfield0995 -0.998924284469 ("")
+		2. Cranfield0471 -0.998922890049 ("")
+		3. Cranfield0271 -0.998905902076 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0492 -0.998901889239 ("prediction of ogive-forebody pressures at angles of attack .")
+		5. Cranfield0347 -0.998900798661 ("boundary layer measurements in hypersonic flow ")
+	Top 5 ranked documents for query13:
+		1. Cranfield0995 -0.998260379768 ("")
+		2. Cranfield0471 -0.998258982797 ("")
+		3. Cranfield0105 -0.998247383854 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		4. Cranfield0335 -0.998245718028 ("the interaction between boundary layer and shock waves in transonic")
+		5. Cranfield0271 -0.99824173774 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+	Top 5 ranked documents for query14:
+		1. Cranfield0995 -0.997967891689 ("")
+		2. Cranfield0471 -0.99796649474 ("")
+		3. Cranfield1126 -0.99795684303 ("an engineer's conceptual approach to the buckling of cylindrical shell (axial loading) .")
+		4. Cranfield0271 -0.997949224854 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		5. Cranfield0105 -0.997947762703 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+	Top 5 ranked documents for query15:
+		1. Cranfield0995 -0.998746324543 ("")
+		2. Cranfield0471 -0.998744926028 ("")
+		3. Cranfield0271 -0.998732336277 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0492 -0.998725506723 ("prediction of ogive-forebody pressures at angles of attack .")
+		5. Cranfield0347 -0.998722186152 ("boundary layer measurements in hypersonic flow ")
+	Top 5 ranked documents for query16:
+		1. Cranfield0995 -0.998825147903 ("")
+		2. Cranfield0471 -0.998823750593 ("")
+		3. Cranfield0271 -0.998806530624 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0492 -0.998803585513 ("prediction of ogive-forebody pressures at angles of attack .")
+		5. Cranfield0347 -0.998801830568 ("boundary layer measurements in hypersonic flow ")
+	Top 5 ranked documents for query17:
+		1. Cranfield0995 -0.998816654032 ("")
+		2. Cranfield0471 -0.998815256834 ("")
+		3. Cranfield0105 -0.99880756894 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		4. Cranfield0492 -0.998804011402 ("prediction of ogive-forebody pressures at angles of attack .")
+		5. Cranfield0271 -0.998799191606 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+	Top 5 ranked documents for query18:
+		1. Cranfield0995 -0.998959511885 ("")
+		2. Cranfield0471 -0.998958115074 ("")
+		3. Cranfield0271 -0.998947869045 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0492 -0.998937957696 ("prediction of ogive-forebody pressures at angles of attack .")
+		5. Cranfield0105 -0.998937133981 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+	Top 5 ranked documents for query19:
+		1. Cranfield0995 -0.998751736389 ("")
+		2. Cranfield0471 -0.998750337142 ("")
+		3. Cranfield0271 -0.998739464982 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		4. Cranfield0492 -0.998729656239 ("prediction of ogive-forebody pressures at angles of attack .")
+		5. Cranfield0347 -0.998729142515 ("boundary layer measurements in hypersonic flow ")
+
+Ans 3.
+	(Indexes start from 0)
+	Relevant Documents:
+		Query 0-
+			Irrelevant:
+				1. Cranfield0471 -0.906225246803 ("")
+				2. Cranfield0995 -0.906225246803 ("")
+			
+			Relevant:
+				1. Cranfield0533 -0.896449896739 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+				2. Cranfield0405 --0.478386053162 ("tables of thermal properties of gases .")
+				3. Cranfield0362 --0.50958959201 ("three-dimensional effect of flutter in a real fluid .")
+				4. Cranfield0271 -0.99863076058 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+				5. Cranfield0492 -0.998621647641 ("prediction of ogive-forebody pressures at angles of attack .")
+				6. Cranfield0347 -0.998621609213 ("boundary layer measurements in hypersonic flow ")
+
+		Query 1:
+			Irrelevant:
+			1. Cranfield0471 -0.918870383605 ("")
+			2. Cranfield0995 -0.918870383605 ("")
+
+			Relevant:
+			1. Cranfield0271 -0.998733621067 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			2. Cranfield0105 -0.998731861337 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			3. Cranfield0492 -0.998727273233 ("prediction of ogive-forebody pressures at angles of attack .")			
+			4. Cranfield0533 -0.909115791366 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			5. Cranfield0405 --0.484853781714 ("tables of thermal properties of gases .")
+			6. Cranfield0362 --0.516995153059 ("three-dimensional effect of flutter in a real fluid .")	
+		Query 2-
+			Irrelevant:
+				1. Cranfield0471 -0.906225246803 ("")
+				2. Cranfield0995 -0.906225246803 ("")
+			
+			Relevant:
+				1. Cranfield0533 -0.896449896739 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+				2. Cranfield0405 --0.478386053162 ("tables of thermal properties of gases .")
+				3. Cranfield0362 --0.50958959201 ("three-dimensional effect of flutter in a real fluid .")
+				4. Cranfield0271 -0.99863076058 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+				5. Cranfield0485 -0.998754279358 ("linear heat flow in a composite slab .")
+				6. Cranfield0347 -0.998621609213 ("boundary layer measurements in hypersonic flow ")
+
+		Query 3:
+			Irrelevant:
+			1. Cranfield0471 -0.918870383605 ("")
+			2. Cranfield0995 -0.918870383605 ("")
+
+			Relevant:
+			1. Cranfield0271 -0.998733621067 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			2. Cranfield0105 -0.998731861337 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			3. Cranfield0492 -0.998727273233 ("prediction of ogive-forebody pressures at angles of attack .")			
+			4. Cranfield0533 -0.909115791366 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			5. Cranfield0405 --0.484853781714 ("tables of thermal properties of gases .")
+			6. Cranfield0362 --0.516995153059 ("three-dimensional effect of flutter in a real fluid .")				
+		
+		Query 4:
+			Irrelevant:
+			1. Cranfield0471 -0.918870383605 ("")
+			2. Cranfield0995 -0.918870383605 ("")
+
+			Relevant:
+			1. Cranfield0271 -0.998733621067 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			2. Cranfield0105 -0.998731861337 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			3. Cranfield0492 -0.998727273233 ("prediction of ogive-forebody pressures at angles of attack .")			
+			4. Cranfield0533 -0.909115791366 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			5. Cranfield0405 --0.484853781714 ("tables of thermal properties of gases .")
+			6. Cranfield0362 --0.516995153059 ("three-dimensional effect of flutter in a real fluid .")		
+		
+		Query 5:
+			Irrelevant:
+			1. Cranfield0471 -0.918870383605 ("")
+			2. Cranfield0995 -0.918870383605 ("")
+
+			Relevant:
+			1. Cranfield0271 -0.998733621067 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			2. Cranfield0105 -0.998731861337 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			3. Cranfield0347 -0.998862720467 ("boundary layer measurements in hypersonic flow ")			
+			4. Cranfield0533 -0.909115791366 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			5. Cranfield0405 --0.484853781714 ("tables of thermal properties of gases .")
+			6. Cranfield0362 --0.516995153059 ("three-dimensional effect of flutter in a real fluid .")	
+				
+		Query 6:
+			Irrelevant:
+			1. Cranfield0995 -0.998922271514 ("")
+			2. Cranfield0471 -0.998920873898 ("")
+			Relevant:
+			1. Cranfield0437 -0.394948289446 ("hypervelocity stagnation point heat transfer .")
+			2. Cranfield0259 -0.382620539328 ("second order theory for unsteady supersonic flow past slender pointed bodies of revolution .")
+			3. Cranfield0105 -0.380311288575 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			4. Cranfield0148 -0.379731977138 ("on displacement thickness .")
+			5. Cranfield0492 -0.379082452152 ("prediction of ogive-forebody pressures at angles of attack .")
+			6. Cranfield0271 -0.998903639147 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		
+		Query 7:
+			Relevant:
+			1. Cranfield0259 -0.427044906026 ("second order theory for unsteady supersonic flow past slender pointed bodies of revolution .")
+			2. Cranfield0437 -0.426845981353 ("hypervelocity stagnation point heat transfer .")
+			3. Cranfield0105 -0.426257633064 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			4. Cranfield1061 -0.42479320276 ("turbulent mixing of a rocket exhaust jet with a supersonic stream including chemical reactions ")
+			5. Cranfield1133 -0.424678109991 ("a simple extension of southwell's method for determining the elastic general instability pressure of ring-stiffened cylinders subject to 								 external hydrostatic pressure .")
+			6. Cranfield0271 -0.99881764301 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			7. Cranfield0492 -0.998824281447 ("prediction of ogive-forebody pressures at angles of attack .")
+			
+			Irrelevant:
+			1. Cranfield0995 -0.99883631567 ("")
+			2. Cranfield0471 -0.998834917638 ("")
+		Query 8:
+			Irrelevant:
+			1. Cranfield0471 -0.95925218092 ("")
+			2. Cranfield0995 -0.95925218092 ("")
+			Relevant:
+			1. Cranfield0533 -0.948596386002 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.50613755613 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.540921787962 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0105 -0.998709100887 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			5. Cranfield0347 -0.998700076063 ("boundary layer measurements in hypersonic flow ")
+			6. Cranfield0271 -0.998695730035 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		Query 9:
+			Irrelevant:
+			1. Cranfield0471 -0.933213222601 ("")
+			2. Cranfield0995 -0.933213222601 ("")
+			Relevant:
+			1. Cranfield0533 -0.923042377003 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.487996087038 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.522365886564 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0271 -0.998930534377 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			5. Cranfield0492 -0.998929265922 ("prediction of ogive-forebody pressures at angles of attack .")
+			6. Cranfield0347 -0.99892705119 ("boundary layer measurements in hypersonic flow ")
+		Query 10:
+			Irrelevant:
+			1. Cranfield0471 -0.916372883261 ("")
+			2. Cranfield0995 -0.916372883261 ("")
+			Relevant:
+			1. Cranfield0533 -0.906241477783 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.484220395199 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.514532333453 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0271 -0.998909577361 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			5. Cranfield0105 -0.998907299223 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			6. Cranfield0492 -0.998906469382 ("prediction of ogive-forebody pressures at angles of attack .")
+		Query 11:
+			Irrelevant:
+			1. Cranfield0995 -0.99872319988 ("")
+			2. Cranfield0471 -0.998721801892 ("")
+			Relevant:
+			1. Cranfield0271 -0.998705241064 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			2. Cranfield0347 -0.998704143019 ("boundary layer measurements in hypersonic flow ")
+			3. Cranfield0492 -0.998702173052 ("prediction of ogive-forebody pressures at angles of attack .")
+			4. Cranfield0533 -0.916322804561 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			5. Cranfield0405 --0.4894572293 ("tables of thermal properties of gases .")
+			6. Cranfield0362 --0.521298780689 ("three-dimensional effect of flutter in a real fluid .")
+		Query 12:
+			Irrelevant:
+			1. Cranfield0471 -0.961282739495 ("")
+			2. Cranfield0995 -0.961282739495 ("")
+			Relevant:
+			1. Cranfield0533 -0.950578488558 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.507179688985 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.54204254381 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0271 -0.998905902076 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			5. Cranfield0492 -0.998901889239 ("prediction of ogive-forebody pressures at angles of attack .")
+			6. Cranfield0347 -0.998900798661 ("boundary layer measurements in hypersonic flow ")
+		Query 13:
+			Irrelevant:
+			1. Cranfield0471 -0.958523880347 ("")
+			2. Cranfield0995 -0.958523880347 ("")
+			Relevant:
+			1. Cranfield0533 -0.948050181201 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.50583067199 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.540575294987 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0105 -0.998247383854 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			5. Cranfield0335 -0.998245718028 ("the interaction between boundary layer and shock waves in transonic")
+			6. Cranfield0271 -0.99824173774 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		Query 14:
+			Relevant:
+			1. Cranfield0259 -0.507540668789 ("second order theory for unsteady supersonic flow past slender pointed bodies of revolution .")
+			2. Cranfield0462 -0.503209173065 ("photo-thermoelasticity ")
+			3. Cranfield0931 -0.502761152104 ("stability equations for conical shells .")
+			4. Cranfield0105 -0.501779905415 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			5. Cranfield0611 -0.500697872167 ("an approximate solution of the compressible laminar boundary layer on a flat plate .")
+			3. Cranfield1126 -0.99795684303 ("an engineer's conceptual approach to the buckling of cylindrical shell (axial loading) .")
+			4. Cranfield0271 -0.997949224854 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			Irrelevant:
+			1. Cranfield0995 -0.997967891689 ("")
+			2. Cranfield0471 -0.99796649474 ("")
+		Query 15:
+			Irrevalant:
+			1. Cranfield0471 -0.908212469068 ("")
+			2. Cranfield0995 -0.908212469068 ("")
+			Relevant:
+			1. Cranfield0533 -0.898042639808 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.480095748388 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.512877629183 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0271 -0.998732336277 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			5. Cranfield0492 -0.998725506723 ("prediction of ogive-forebody pressures at angles of attack .")
+			6. Cranfield0347 -0.998722186152 ("boundary layer measurements in hypersonic flow ")
+		Query 16:
+			Relevant:
+			1. Cranfield0259 -0.42429292942 ("second order theory for unsteady supersonic flow past slender pointed bodies of revolution .")
+			2. Cranfield0437 -0.421816265309 ("hypervelocity stagnation point heat transfer .")
+			3. Cranfield0105 -0.416195328308 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			4. Cranfield1088 -0.415059002345 ("iterative methods for solving partial difference equations of elliptic type ")
+			5. Cranfield1145 -0.414819195072 ("buckling of core-stabilized cylinders under axisymmetric external")
+			6. Cranfield0271 -0.998806530624 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			7. Cranfield0492 -0.998803585513 ("prediction of ogive-forebody pressures at angles of attack .")
+			8. Cranfield0347 -0.998801830568 ("boundary layer measurements in hypersonic flow ")
+			Irrelevant:
+			1. Cranfield0995 -0.998825147903 ("")
+			2. Cranfield0471 -0.998823750593 ("")
+		Query 17:
+			Irrelevant:
+			1. Cranfield0471 -0.929484722578 ("")
+			2. Cranfield0995 -0.929484722578 ("")
+			Relevant:
+			1. Cranfield0533 -0.9190847801 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.490945445181 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.527071980275 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0105 -0.99880756894 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			5. Cranfield0492 -0.998804011402 ("prediction of ogive-forebody pressures at angles of attack .")
+			6. Cranfield0271 -0.998799191606 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+		Query 17:
+			Irrelevant:
+			1. Cranfield0471 -0.929484722578 ("")
+			2. Cranfield0995 -0.929484722578 ("")
+			Relevant:
+			1. Cranfield0533 -0.9190847801 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.490945445181 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.527071980275 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0105 -0.99880756894 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+			5. Cranfield0492 -0.998804011402 ("prediction of ogive-forebody pressures at angles of attack .")
+			6. Cranfield0271 -0.998799191606 ("an experimental test of compressibility transformation for turbulent boundary layer .")	
+		Query 18:
+			Irrelevant:
+			1. Cranfield0471 -0.907056625879 ("")
+			2. Cranfield0995 -0.907056625879 ("")
+			Relevant:
+			1. Cranfield0533 -0.896882361675 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.479374588463 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.507225686001 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0271 -0.998947869045 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			5. Cranfield0492 -0.998937957696 ("prediction of ogive-forebody pressures at angles of attack .")
+			6. Cranfield0105 -0.998937133981 ("the asymptotic boundary layer on a circular cylinder in axial incompressible flow .")
+		Query 19:
+			Irrelevant:
+			1. Cranfield0471 -0.871622659876 ("")
+			2. Cranfield0995 -0.871622659876 ("")
+			Relevant:
+			1. Cranfield0533 -0.861895012052 ("stagnation-point shock-detachment distance for flow around spheres and cylinders in air .")
+			2. Cranfield0405 --0.461234174391 ("tables of thermal properties of gases .")
+			3. Cranfield0362 --0.492613419694 ("three-dimensional effect of flutter in a real fluid .")
+			4. Cranfield0271 -0.998739464982 ("an experimental test of compressibility transformation for turbulent boundary layer .")
+			5. Cranfield0492 -0.998729656239 ("prediction of ogive-forebody pressures at angles of attack .")
+			6. Cranfield0347 -0.998729142515 ("boundary layer measurements in hypersonic flow ")
+			
+
+		
+				
+	
+		
+					
+			
+Ans 4. Weighting Scheme 1:
+	The reason why top ranked documents which were not relevant to the query got ranked higher because, even if for the lemma which is present in the query but not in the document the cosine
+	score(document) for that lemma is not 0(because of log(tf+0.5)) and since the max_tf was the lowest in those non relevant documents, the denominator got reduced(log(maxtf+1)). Also almost
+	all the words that are present in the query are present in the document, even the idf doesn't become zero
+       Weighting Scheme 2:
+       	The reason why top ranked documents which were not relevant to the query got ranked higher because,even if for the lemma which is present in the query but not in the document the cosine
+	score(document) for that lemma is not 0(because in the numerator we are adding 0.4) and most all the words present in the query are present in the document, thus even the idf doesn't become 0
+	
+Ans 5. There was a huge difference in the way both the weighting schemes assigned the scores.I think given a choice of choosing between these 2 weigting schemes, I would choose the weighting scheme 1
+	to rank the documents. The number of irrelevant documents were less as compared to the weighting scheme2. Also the irrelevant documents were penalized more because when the "tf" becomes 0
+	, then the term 0.6*log(tf+0.5) becomes neagtive and thus it penalizes the score more when no match is found.
+Ans 6. I used a 2 dimensional dictionary in python to create a vector over the documents. The first dimension is the lemma found in the documents and the second dimension is the document.Thus, each
+	cell in the 2-D dictionary is the tf of the word in the given document.
+	
+	For weighting scheme 1, when calculating score for the query I have taken 
+	a)"tf" -term frequency of the lemma in the query
+	b)"collectionSize"- number of documents
+	c)"max_tf"- the maximum term frequency of any lemma in the given query 
+	d)"df"-df of the word in the documents
+	
+	For weighting scheme 2 ,when calculating score for the query I have taken
+	a)"tf" -term frequency of the lemma in the query
+	b)"collectionSize"- number of documents
+	c)"doclen"-length of the query
+	d)"avgDoclen"-average length of the query
+	e)"df"-df of the word in the documents

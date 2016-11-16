@@ -274,7 +274,7 @@ def writeDictToFile(filename,d):
 
 
 def printAttributesWords(wordList,stemDict):
-    print 'Word'+' '+'DF'+' '+'TF'+' '+'Size'
+    print 'Word'+' \t'+'DF'+'\t'+'TF'+'\t'+'Size'
     for word in wordList:
         word=word.lower()
         stemmer = PorterStemmer()
@@ -284,7 +284,6 @@ def printAttributesWords(wordList,stemDict):
         print word+' '+str(df)+' '+str(tf)+' '+str(sys.getsizeof(stemDict[temp]))+' bytes'
 
 def getTFMaxTFDoclen(word,stemDict,docDict):
-    print word
     word=word.lower()
     stemmer = PorterStemmer()
     stem=stemmer.stem(word)
@@ -303,36 +302,52 @@ if __name__=='__main__':
     # stopwords=readStopWords('/home/aditya/Desktop/Aditya/IR/Assignments/Assignment2/stopwords')
     stopwords=readStopWords('/people/cs/s/sanda/cs6322/resourcesIR/stopwords')
     start_time=time.time()
-    # lemmaDict,stemDict,docDict=createDict('/home/aditya/Desktop/Aditya/IR/Assignments/Assignment1/Cranfield',
-    #            stopwords)
-    lemmaDict,stemDict,docDict=createDict('/people/cs/s/sanda/cs6322/Cranfield',
-               stopwords)
+    # lemmaDict,stemDict,docDict=createDict('/home/aditya/Desktop/Aditya/IR/Assignments/Assignment1/Cranfield',stopwords)
+    lemmaDict,stemDict,docDict=createDict('/people/cs/s/sanda/cs6322/Cranfield',stopwords)
     stop_time=time.time()
-    print 'Time take to make Index_version1.uncompress :'+str(stop_time-start_time)
-    print 'Size of the Index_version1.uncompress file :'+str(getFileSize('Index_version1.uncompress'))
-    print 'Time take to make Index_version2.uncompress :'+str(stop_time-start_time)
-    print 'Size of the Index_version2.uncompress file :'+str(getFileSize('Index_version2.uncompress'))
+    print 'Time take to make Index_version1.uncompress : '+str(stop_time-start_time)+'ms'
+    print
+    print 'Size of the Index_version1.uncompress file :'+str(getFileSize('Index_version1.uncompress'))+' bytes'
+    print
+    print 'Time take to make Index_version2.uncompress : '+str(stop_time-start_time)+'ms'
+    print
+    print 'Size of the Index_version2.uncompress file :'+str(getFileSize('Index_version2.uncompress'))+' bytes'
+    print
     writeDictToFile('Index_version1.uncompress',lemmaDict)
     writeDictToFile('Index_version2.uncompress',stemDict)
     start_time=time.time()
     blockCompression(lemmaDict,docDict,'Index_version1.compressed','Index_version1.compressedDictionary',8)
     stop_time=time.time()
-    print 'Time taken to make Index_version1.compressed :'+str(stop_time-start_time)
-    print 'Size of the Index_version1.compressed file :'+str(getFileSize('Index_version1.compressed'))
+    print 'Time taken to make Index_version1.compressed :'+str(stop_time-start_time)+'ms'
+    print
+    print 'Size of the Index_version1.compressed file :'+str(getFileSize('Index_version1.compressed'))+' bytes'
+    print
     start_time=time.time()
     frontCodingCompression(stemDict,docDict,'Index_version2.compressed','Index_version2.compressedDictionary')
     stop_time=time.time()
-    print 'Time taken to make Index_version2.compressed :'+str(stop_time-start_time)
-    print 'Size of the Index_version2.compressed file :'+str(getFileSize('Index_version2.compressed'))
-    print 'Stem with largest DF:'+str(termWithLargestDF(stemDict))
+    print 'Time taken to make Index_version2.compressed :'+str(stop_time-start_time)+'ms'
+    print
+    print 'Size of the Index_version2.compressed file :'+str(getFileSize('Index_version2.compressed'))+' bytes'
+    print
+    stem,df=termWithLargestDF(stemDict)
+    print 'Stem with largest DF:'+str(stem)+' DF:'+str(df)
+    print
     print 'Stem(s) with lowest DF'
+    print
     print 'Stem\tDF'
+    print
     for i,j in termsWithLowestDF(stemDict):
         print i,j
-    print 'Doc with largest max TF:'+str(docWithlargestMaxTF(docDict))
-    print 'Doc with largest doclen:'+str(docWithLargestDocLen(docDict))
+    doc,tf=docWithlargestMaxTF(docDict)
+    print
+    print 'Doc with largest max TF:'+str(doc)+'   TF: '+str(tf)
+    print
+    doc,doclen=docWithLargestDocLen(docDict)
+    print 'Doc with largest doclen:'+str(doc)+'  Doclen: '+str(doclen)
+    print
     termArray=["Reynolds", "NASA", "Prandtl", "flow", "pressure", "boundary", "shock" ]
     printAttributesWords(termArray,stemDict)
+    print
     print "Nasa's posting list:"
     getTFMaxTFDoclen('NASA',stemDict,docDict)
 
