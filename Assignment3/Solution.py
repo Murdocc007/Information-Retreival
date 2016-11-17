@@ -222,10 +222,12 @@ def cosineSimilarity(stopwords,query,d,doc_id,collectionSize,docLen,avgDocLen,nu
         cosine_dict_query[word]['tf_raw']=query.count(word)
         cosine_dict_query[word]['df']=len([val for val in d[word].keys()]) if word in d else 0
         cosine_dict_query[word]['idf']=log10(collectionSize/cosine_dict_query[word]['df']) if cosine_dict_query[word]['df']!=0 else 0
-        if weightingScheme==1:
-            cosine_dict_query[word]['wt']=(0.4 + 0.6 * log10(cosine_dict_query[word]['tf_raw'] + 0.5) / log10(max_tf + 1.0)) * (cosine_dict_query[word]['idf']/ log10(collectionSize)) if max_tf!=0  and collectionSize>1 else 0
-        else:
-            cosine_dict_query[word]['wt']=(0.4 + 0.6 * (cosine_dict_query[word]['tf_raw'] / (cosine_dict_query[word]['tf_raw'] + 0.5 + 1.5 * (len(query) / avgQueryLength))) * cosine_dict_query[word]['idf'])
+        cosine_dict_query[word]['wt']=0
+        if word in keys_a:
+            if weightingScheme==1:
+                cosine_dict_query[word]['wt']=(0.4 + 0.6 * log10(cosine_dict_query[word]['tf_raw'] + 0.5) / log10(max_tf + 1.0)) * (cosine_dict_query[word]['idf']/ log10(collectionSize)) if max_tf!=0  and collectionSize>1 else 0
+            else:
+                cosine_dict_query[word]['wt']=(0.4 + 0.6 * (cosine_dict_query[word]['tf_raw'] / (cosine_dict_query[word]['tf_raw'] + 0.5 + 1.5 * (len(query) / avgQueryLength))) * cosine_dict_query[word]['idf'])
         normalization_denom+=cosine_dict_query[word]['wt']**2
     for word in keys:
         cosine_dict_query[word]['nlized']=cosine_dict_query[word]['wt']/sqrt(normalization_denom)
@@ -238,10 +240,12 @@ def cosineSimilarity(stopwords,query,d,doc_id,collectionSize,docLen,avgDocLen,nu
         cosine_dict_doc[word]['tf_raw']=d[word][doc_id] if word in d and doc_id in d[word].keys() else 0
         cosine_dict_doc[word]['df']=len([val for val in d[word].keys()]) if word in d else 0
         cosine_dict_doc[word]['idf']=log10(collectionSize / cosine_dict_doc[word]['df']) if cosine_dict_doc[word]['df']!=0 else 0
-        if weightingScheme==1:
-            cosine_dict_doc[word]['wt']=(0.4 + 0.6 * log10 (cosine_dict_doc[word]['tf_raw'] + 0.5) / log10(max_tf + 1.0)) * (cosine_dict_doc[word]['idf']/ log10(collectionSize)) if max_tf!=0 and collectionSize>1 else 0
-        else:
-            cosine_dict_doc[word]['wt']=(0.4 + 0.6 * (cosine_dict_doc[word]['tf_raw'] / (cosine_dict_doc[word]['tf_raw'] + 0.5 + 1.5 * (docLen / avgDocLen))) * cosine_dict_doc[word]['idf']/ log10(collectionSize))
+        cosine_dict_doc[word]['wt']=0
+        if word in keys_b:
+            if weightingScheme==1:
+                cosine_dict_doc[word]['wt']=(0.4 + 0.6 * log10 (cosine_dict_doc[word]['tf_raw'] + 0.5) / log10(max_tf + 1.0)) * (cosine_dict_doc[word]['idf']/ log10(collectionSize)) if max_tf!=0 and collectionSize>1 else 0
+            else:
+                cosine_dict_doc[word]['wt']=(0.4 + 0.6 * (cosine_dict_doc[word]['tf_raw'] / (cosine_dict_doc[word]['tf_raw'] + 0.5 + 1.5 * (docLen / avgDocLen))) * cosine_dict_doc[word]['idf']/ log10(collectionSize))
         normalization_denom+=cosine_dict_doc[word]['wt']**2
     for word in keys:
         cosine_dict_doc[word]['nlized']=cosine_dict_doc[word]['wt']/sqrt(normalization_denom)
@@ -253,6 +257,11 @@ def cosineSimilarity(stopwords,query,d,doc_id,collectionSize,docLen,avgDocLen,nu
     # print similarity
     return similarity
 
+
+def getTitle(fileName):
+    f=open(fileName,'r')
+    data=f.read()
+    return transformText(data.split('TITLE>') [1])
 
 if __name__=='__main__':
     # stopwords=readStopWords('/home/aditya/Desktop/Aditya/IR/Assignments/Assignment2/stopwords')
@@ -280,6 +289,7 @@ if __name__=='__main__':
     for i in range(1,collectionLength+1):
         vectorDocs(lemmaDict,i,collectionLength,docslen[i-1],avgDocsLength,weightingScheme=2)
 
+
     print 'Cosine similarity with weighting scheme 1'
     #cosine weights 1
     for i in range(len(query)):
@@ -288,8 +298,12 @@ if __name__=='__main__':
             res=cosineSimilarity(stopwords,query[i],lemmaDict,j,collectionLength,docslen[j-1],sum(docslen)/collectionLength,avgQueryLength,numberofQueries,1)
             similarity.append([res,j])
         similarity=sorted(similarity,key= lambda x:x[0],reverse=True)
-        print 'Query '+str(i)
-        print similarity[:5]
+        print( 'Query '+str(i))
+
+        for temp in similarity[:5]:
+            print('cranfield'+'0'*(4-len(str(temp[1])))+str(temp[1])+' '+'Similarity:'+str(temp[0]))
+            print getTitle ('/home/aditya/Desktop/Aditya/IR/Assignments/Assignment1/Cranfield/cranfield'+'0'*(4-len(str(temp[1])))+str(temp[1]))
+
 
 
 
@@ -299,8 +313,11 @@ if __name__=='__main__':
         similarity=[]
         for j in range(1,collectionLength+1):
             res=cosineSimilarity(stopwords,query[i],lemmaDict,j,collectionLength,docslen[i],sum(docslen)/collectionLength,avgQueryLength,numberofQueries,2)
-            similarity.append(res)
+            similarity.append([res,j])
         similarity=sorted(similarity,key= lambda x:x[0],reverse=True)
-        print 'Query '+str(i)
-        print similarity[:5]
+        print('Query '+str(i))
+        for temp in similarity[:5]:
+            print('cranfield'+'0'*(4-len(str(temp[1])))+str(temp[1])+' '+'Similarity:'+str(temp[0]))
+            print getTitle ('/home/aditya/Desktop/Aditya/IR/Assignments/Assignment1/Cranfield/cranfield'+'0'*(4-len(str(temp[1])))+str(temp[1]))
+
 

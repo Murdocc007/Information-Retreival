@@ -1,1 +1,12 @@
 *.zip
+# exclude everything
+Assignment3/DocVectors/*
+
+# exception to the rule
+!Assignment3/DocVectors/.gitkeep 
+
+Assignment3/queryVector/*
+
+!Assignment3/queryVector/.gitkeep
+
+
